@@ -1,7 +1,17 @@
 #include <math.h>
 //INPUT pins
+//location control
 #define xPin A0
 #define yPin A1
+//#define xPin A0
+//#define yPin A1
+
+//other control
+#define sonarPin 6
+#define activatePin 7
+
+//OUTPUT pins
+#define speaker 8
 
 //control variables 
 int PosX = 0;
@@ -23,19 +33,22 @@ int lastValY = 0;
 int serialvalue; 
 int started = 0;
 
-enum abduction{START, MOVE, ERR, LOCATE, FAIL, SUCCESS};
+enum abduction{START, MOVE, ERR, SONAR, FAIL, SUCCESS};
 abduction state = MOVE; 
 
 void setup()
 {
   Serial.begin(9600); // open the arduino serial port
+  //INPUT
   pinMode(xPin, INPUT);
   pinMode(yPin, INPUT);
+  //pinMode(xPin, INPUT);
+  //pinMode(yPin, INPUT);
+  sonarMode(xPin, INPUT);
+  activateMode(yPin, INPUT);
 
   lastValX = analogRead(xPin);
   lastValY = analogRead(yPin);
-  Serial.println(lastValX);
-  Serial.println(lastValY);
 }
 
 void loop()
@@ -49,7 +62,7 @@ void loop()
       moving();
       break;
     
-    case LOCATE:
+    case SONAR:
       break;
     
     case ERR:
@@ -108,23 +121,43 @@ void moving() {
     
     lastValX = analogRead(xPin);
     lastValY = analogRead(yPin);
+  
+    if (digitalRead(activatePin) == HIGH) {
+    activate();   
+    }
+    
+    if (digitalRead(sonarPin) == HIGH)) {
+    state = SONAR;   
+    } else if (digitalRead(sonarPin) == HIGH)) {
+      state = ERR;
+    }
 }
 
-void grab() {
-    if (tDistance <= 5) {
+void activate() {
+    if (xDistance <= 3 && yDistance <=3) {
         state = SUCCESS;
-    } else if (tDistance >= 5) {
+    } else {
         state = FAIL;
     }
 }
 
-//-------------- LOCATE state --------------//
+//-------------- SONAR state --------------//
+void beep() {
+    Serial.print(tAzimuth); // angle
+    Serial.print(" ");
+    Serial.print(tDistance); // distance
+    Serial.println();
+  state = moving;
+}
 
 //-------------- ERR state --------------//
+void noMore() {
+  //play tone
+}
 
 //-------------- FAIL state --------------//
+// Play sound, show score, reset counter
 
 //-------------- SUCCESS state --------------//
-// Play sound, seed new location 
-
+// Play sound, seed new location, increase counter
 
