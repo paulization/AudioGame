@@ -1,4 +1,7 @@
+//Libraries
+#include "Encoder.h"
 #include <math.h>
+
 //INPUT pins
 //location control
 #define xPin A0
@@ -33,8 +36,8 @@ int lastValY = 0;
 int serialvalue; 
 int started = 0;
 
-enum abduction{START, MOVE, ERR, SONAR, FAIL, SUCCESS};
-abduction state = MOVE; 
+enum submarine{START, MOVE, ERR, SONAR, FAIL, SUCCESS};
+submarine state = MOVE; 
 
 void setup()
 {
@@ -44,8 +47,8 @@ void setup()
   pinMode(yPin, INPUT);
   //pinMode(xPin, INPUT);
   //pinMode(yPin, INPUT);
-  sonarMode(xPin, INPUT);
-  activateMode(yPin, INPUT);
+  pinMode(sonarPin, INPUT);
+  pinMode(activatePin, INPUT);
 
   lastValX = analogRead(xPin);
   lastValY = analogRead(yPin);
@@ -126,9 +129,9 @@ void moving() {
     activate();   
     }
     
-    if (digitalRead(sonarPin) == HIGH)) {
+    if (digitalRead(sonarPin) == HIGH) {
     state = SONAR;   
-    } else if (digitalRead(sonarPin) == HIGH)) {
+    } else if (digitalRead(sonarPin) == HIGH) {
       state = ERR;
     }
 }
@@ -147,7 +150,7 @@ void beep() {
     Serial.print(" ");
     Serial.print(tDistance); // distance
     Serial.println();
-  state = moving;
+    state = MOVE;
 }
 
 //-------------- ERR state --------------//
