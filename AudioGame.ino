@@ -14,9 +14,9 @@
 #define speaker 8
 
 //control variables 
-int PosX = 0;
-int PosY = 0;
-int pulse = 3;
+int PosX = 5;
+int PosY = 5;
+int pulse;
 
 //calculated variables
 int tPosX = 0;
@@ -43,6 +43,9 @@ void setup()
   pinMode(yPin, INPUT);
   pinMode(sonarPin, INPUT);
   pinMode(activatePin, INPUT);
+  
+  //OUTPUT
+  pinMode(speaker, OUTPUT);
 
 }
 
@@ -63,9 +66,11 @@ void loop()
       break;
     
     case FAIL:
+      lose();
       break;
     
     case SUCCESS:
+      win();
       break;
   }
 
@@ -80,12 +85,13 @@ void loop()
 
 //-------------- START state --------------//
 void starting() {
-  	Serial.println("Please calibrate");
-  	Serial.println("your control set x, y = 0");
-  	if (analogRead(xPin) > 450 && analogRead(xPin) < 550 && 
-        analogRead(yPin) > 450 && analogRead(yPin) < 550) {
-    	pulse = 3;
-      	state = MOVE;
+    Serial.println("Please calibrate");
+    Serial.println("your control set x, y = 0");
+    if (analogRead(xPin) > 450 && analogRead(xPin) < 550 && 
+        analogRead(yPin) > 450 && analogRead(yPin) < 550 && 
+        digitalRead(activatePin) == LOW) {
+        pulse = 3;
+          state = MOVE;
     }
 }
 
@@ -93,56 +99,57 @@ void starting() {
 //-------------- MOVE state --------------//
 void moving() {
     
-  	locate();
+    locate();
       
-  	locationDebug();
+    locationDebug();
 
     handleMove();
   
     if (digitalRead(activatePin) == LOW) {
-    	handleActivate();   
+      handleActivate();   
     }
     
     if (digitalRead(sonarPin) == LOW && pulse > 0) {
-      	pulse--;
-    	state = SONAR;   
+        pulse--;
+      state = SONAR;   
     } else if (digitalRead(sonarPin) == LOW && pulse == 0) {
-      	//play tone
-      	Serial.println("No more pulse");
+        tone(speaker, 150, 500);
+        Serial.println("No more pulse");
+        delay(501);
     }
 }
 
 void locate() {
-  	xDistance = abs(tPosX-PosX);
+    xDistance = abs(tPosX-PosX);
     yDistance = abs(tPosY-PosY);
     tDistance = sqrt(pow(xDistance, 2) + pow(yDistance, 2));
     tAzimuth = atan2(yDistance, xDistance);
     if (tAzimuth== pi) {
-      	tAzimuth = -tAzimuth;
+        tAzimuth = -tAzimuth;
     } else if (tAzimuth > beginning) {
         tAzimuth = tAzimuth - 2 *pi;
-    }	
+    } 
 }
 
 void handleMove() {
-  	PosX = (1023-analogRead(xPin)) / 50 - 10;
-  	PosY = (1023-analogRead(yPin)) / 50 - 10;
+    PosX = (1023-analogRead(xPin)) / 50 - 10;
+    PosY = (1023-analogRead(yPin)) / 50 - 10;
 }
 
 void locationDebug() {
-   	Serial.print(PosX);
-  	Serial.print(" ");
-  	Serial.print(PosY);
+    Serial.print(PosX);
+    Serial.print(" ");
+    Serial.print(PosY);
     Serial.print(" ");
     Serial.print(tAzimuth); // angle in radians
     Serial.print(" ");
     Serial.print(tDistance); // distance
     Serial.println();
-    delay(100); // pause
+    delay(500); // pause
 }
 
 void handleActivate() {
-    if (xDistance <= 3 && yDistance <= 3) {
+    if (xDistance <= 2 && yDistance <= 2) {
         state = SUCCESS;
     } else {
         state = FAIL;
@@ -157,11 +164,30 @@ void sonarPulse() {
     Serial.print(tDistance); // distance
     Serial.println();
     state = MOVE;
+    delay(2000);
 }
 
 
 //-------------- SUCCESS state --------------//
 // Play sound, seed new location, increase counter
+void win() {
+    Serial.println("WIN");
+    tone(speaker, 450, 250);
+  PosX = 3;
+    PosY = -5;
+    state = MOVE;
+    delay(251);
+}
+
 
 //-------------- FAIL state --------------//
 // Play sound, show score, reset counter
+void lose() {
+    Serial.println("LOSE");
+  tone(speaker, 50, 500);
+    state = START;
+    delay(501);
+}
+  
+// ------------ AUX ------------
+
