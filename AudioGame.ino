@@ -137,6 +137,8 @@ void handleMove() {
 }
 
 void locationDebug() {
+
+    Serial.print(" ");
     Serial.print(PosX);
     Serial.print(" ");
     Serial.print(PosY);
@@ -158,7 +160,10 @@ void handleActivate() {
 
 //-------------- SONAR state --------------//
 void sonarPulse() {
-    Serial.println("Pulsing");
+    Serial.print("sonar");
+    Serial.print(" ");
+    Serial.print(1);
+    Serial.print(" ");
     Serial.print(tAzimuth); // angle
     Serial.print(" ");
     Serial.print(tDistance); // distance
