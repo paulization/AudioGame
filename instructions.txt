@@ -1,0 +1,19 @@
+Hello lieutenant,
+
+You are controlling self-propelling underwater mine.
+
+Use sonar to locate enemy's submarine.
+
+Use sliders to move the mine.
+
+Activate the mine when you are in a close range to target.
+
+You only have 3 chances of sonar.
+
+You cannot move or activate while sonar is working.
+
+
+Now, please calibrate your control.
+
+Move both sliders to the center, and press activate when you are ready.
+
