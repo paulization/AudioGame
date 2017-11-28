@@ -16,4 +16,3 @@ You cannot move or activate while sonar is working.
 Now, please calibrate your control.
 
 Move both sliders to the center, and press activate when you are ready.
-

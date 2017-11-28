@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1954.0, 77.0, 1446.0, 929.0 ],
+		"rect" : [ 1954.0, 77.0, 1852.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,46 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"data" : 					{
+						"clips" : [ 							{
+								"filename" : "C:/Users/Paul Suvansupa/Documents/Arduino/AudioGame/instructions.wav",
+								"filekind" : "audiofile",
+								"selection" : [ 0.0, 1.0 ],
+								"loop" : 0,
+								"content_state" : 								{
+									"slurtime" : [ 0.0 ],
+									"formant" : [ 1.0 ],
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ],
+									"followglobaltempo" : [ 0 ],
+									"mode" : [ "basic" ],
+									"formantcorrection" : [ 0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"speed" : [ 1.0 ],
+									"play" : [ 0 ],
+									"pitchcorrection" : [ 0 ],
+									"quality" : [ "basic" ],
+									"timestretch" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"pitchshift" : [ 1.0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"id" : "obj-19",
+					"maxclass" : "playlist~",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+					"patching_rect" : [ 115.25, 764.0, 150.0, 30.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "newobj",
@@ -68,49 +108,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 187.0, 460.0, 57.0, 22.0 ],
+					"patching_rect" : [ 93.5, 403.0, 57.0, 22.0 ],
 					"style" : "",
 					"text" : "print raw"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"data" : 					{
-						"clips" : [ 							{
-								"filename" : "C:/Users/Paul Suvansupa/Documents/Arduino/AudioGame/Instructions.wav",
-								"filekind" : "audiofile",
-								"selection" : [ 0.0, 1.0 ],
-								"loop" : 0,
-								"content_state" : 								{
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"play" : [ 0 ],
-									"quality" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"mode" : [ "basic" ],
-									"basictuning" : [ 440 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ]
-								}
-
-							}
- ]
-					}
-,
-					"id" : "obj-118",
-					"maxclass" : "playlist~",
-					"numinlets" : 1,
-					"numoutlets" : 5,
-					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"patching_rect" : [ 107.25, 824.666687, 150.0, 30.0 ],
-					"style" : ""
 				}
 
 			}
@@ -121,7 +121,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 515.0, 800.666687, 29.5, 22.0 ],
+					"patching_rect" : [ 523.0, 740.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "- 1"
 				}
@@ -134,7 +134,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 107.25, 800.666687, 29.5, 22.0 ],
+					"patching_rect" : [ 115.25, 740.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "- 1"
 				}
@@ -147,7 +147,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 318.941162, 800.666687, 29.5, 22.0 ],
+					"patching_rect" : [ 326.941162, 740.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "- 1"
 				}
@@ -175,20 +175,20 @@
 								"selection" : [ 0.0, 1.0 ],
 								"loop" : 1,
 								"content_state" : 								{
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"play" : [ 1 ],
-									"quality" : [ "basic" ],
 									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"mode" : [ "basic" ],
-									"basictuning" : [ 440 ],
-									"pitchcorrection" : [ 0 ],
 									"formant" : [ 1.0 ],
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ],
+									"followglobaltempo" : [ 0 ],
+									"mode" : [ "basic" ],
+									"formantcorrection" : [ 0 ],
 									"originallength" : [ 0.0, "ticks" ],
+									"speed" : [ 1.0 ],
+									"play" : [ 1 ],
+									"pitchcorrection" : [ 0 ],
+									"quality" : [ "basic" ],
+									"timestretch" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
 									"pitchshift" : [ 1.0 ]
 								}
 
@@ -201,7 +201,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"patching_rect" : [ 318.941162, 824.666687, 150.0, 30.0 ],
+					"patching_rect" : [ 326.941162, 764.0, 150.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -215,20 +215,20 @@
 								"selection" : [ 0.0, 1.0 ],
 								"loop" : 1,
 								"content_state" : 								{
-									"followglobaltempo" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"play" : [ 0 ],
-									"quality" : [ "basic" ],
 									"slurtime" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"mode" : [ "basic" ],
-									"basictuning" : [ 440 ],
-									"pitchcorrection" : [ 0 ],
 									"formant" : [ 1.0 ],
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ],
+									"followglobaltempo" : [ 0 ],
+									"mode" : [ "basic" ],
+									"formantcorrection" : [ 0 ],
 									"originallength" : [ 0.0, "ticks" ],
+									"speed" : [ 1.0 ],
+									"play" : [ 0 ],
+									"pitchcorrection" : [ 0 ],
+									"quality" : [ "basic" ],
+									"timestretch" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
 									"pitchshift" : [ 1.0 ]
 								}
 
@@ -241,7 +241,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"patching_rect" : [ 515.0, 824.666687, 150.0, 30.0 ],
+					"patching_rect" : [ 523.0, 764.0, 150.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -276,12 +276,12 @@
 				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "newobj",
-					"numinlets" : 4,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 318.941162, 375.0, 131.0, 22.0 ],
+					"numinlets" : 6,
+					"numoutlets" : 6,
+					"outlettype" : [ "", "", "", "", "", "" ],
+					"patching_rect" : [ 318.941162, 375.0, 177.0, 22.0 ],
 					"style" : "",
-					"text" : "route start move sonar"
+					"text" : "route start move sonar win lose"
 				}
 
 			}
@@ -292,7 +292,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 810.25, 630.666687, 29.5, 22.0 ],
+					"patching_rect" : [ 682.691162, 656.666687, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "0.5"
 				}
@@ -344,7 +344,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 810.25, 573.666626, 41.0, 22.0 ],
+					"patching_rect" : [ 722.25, 507.0, 41.0, 22.0 ],
 					"style" : "",
 					"text" : "0.375"
 				}
@@ -396,7 +396,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1214.333374, 580.0, 24.0, 24.0 ],
+					"patching_rect" : [ 940.333374, 767.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -511,7 +511,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1047.0, 603.0, 123.0, 20.0 ],
+					"patching_rect" : [ 1040.5, 603.0, 123.0, 20.0 ],
 					"style" : "",
 					"text" : "Normalized Distance"
 				}
@@ -804,14 +804,13 @@
 					"fontname" : "Lato",
 					"fontsize" : 11.595187,
 					"id" : "obj-18",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 636.941162, 905.666687, 121.0, 36.0 ],
+					"patching_rect" : [ 636.941162, 905.666687, 121.0, 22.0 ],
 					"style" : "",
-					"text" : "0.241465 0.400283 50"
+					"text" : "0. 0. 50"
 				}
 
 			}
@@ -1008,7 +1007,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-118", 0 ],
+					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-114", 0 ]
 				}
 
@@ -1022,22 +1021,22 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 1 ],
-					"source" : [ "obj-118", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
-					"source" : [ "obj-118", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"source" : [ "obj-12", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-105", 0 ],
+					"source" : [ "obj-12", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-105", 0 ],
+					"source" : [ "obj-12", 3 ]
 				}
 
 			}
@@ -1059,7 +1058,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-118", 0 ],
+					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -1104,6 +1103,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-32", 1 ],
 					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 1 ],
+					"source" : [ "obj-19", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -1482,7 +1495,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Instructions.wav",
+				"name" : "instructions.wav",
 				"bootpath" : "~/Documents/Arduino/AudioGame",
 				"patcherrelativepath" : ".",
 				"type" : "WAVE",
@@ -1511,8 +1524,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
