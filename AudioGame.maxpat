@@ -40,7 +40,7 @@
 				"box" : 				{
 					"data" : 					{
 						"clips" : [ 							{
-								"filename" : "../instructions.wav",
+								"filename" : "./instructions.wav",
 								"filekind" : "audiofile",
 								"selection" : [ 0.0, 1.0 ],
 								"loop" : 0,
@@ -170,7 +170,7 @@
 				"box" : 				{
 					"data" : 					{
 						"clips" : [ 							{
-								"filename" : "../197751__wjoojoo__underwater-ambience-lake-lbj-08232013-1.flac",
+								"filename" : "./197751__wjoojoo__underwater-ambience-lake-lbj-08232013-1.flac",
 								"filekind" : "audiofile",
 								"selection" : [ 0.0, 1.0 ],
 								"loop" : 1,
@@ -210,7 +210,7 @@
 				"box" : 				{
 					"data" : 					{
 						"clips" : [ 							{
-								"filename" : "../38701__argitoth__archi-sonar-02.wav",
+								"filename" : "./38701__argitoth__archi-sonar-02.wav",
 								"filekind" : "audiofile",
 								"selection" : [ 0.0, 1.0 ],
 								"loop" : 1,
