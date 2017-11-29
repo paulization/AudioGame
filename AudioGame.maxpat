@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1954.0, 77.0, 1852.0, 929.0 ],
+		"rect" : [ 42.0, 85.0, 1446.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,38 +40,118 @@
 				"box" : 				{
 					"data" : 					{
 						"clips" : [ 							{
-								"filename" : "./instructions.wav",
+								"filename" : "C:/Users/Paul Suvansupa/Documents/Arduino/AudioGame/instructions.wav",
 								"filekind" : "audiofile",
 								"selection" : [ 0.0, 1.0 ],
 								"loop" : 0,
 								"content_state" : 								{
-									"slurtime" : [ 0.0 ],
-									"formant" : [ 1.0 ],
+									"timestretch" : [ 0 ],
 									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"followglobaltempo" : [ 0 ],
+									"play" : [ 0 ],
+									"slurtime" : [ 0.0 ],
 									"mode" : [ "basic" ],
 									"formantcorrection" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"speed" : [ 1.0 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
-									"timestretch" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
-									"pitchshift" : [ 1.0 ]
+									"basictuning" : [ 440 ],
+									"speed" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"originallength" : [ 0.0, "ticks" ],
+									"pitchshift" : [ 1.0 ],
+									"followglobaltempo" : [ 0 ]
 								}
 
 							}
  ]
 					}
 ,
-					"id" : "obj-19",
+					"id" : "obj-50",
 					"maxclass" : "playlist~",
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 					"patching_rect" : [ 115.25, 764.0, 150.0, 30.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"data" : 					{
+						"clips" : [ 							{
+								"filename" : "C:/Users/Paul Suvansupa/Documents/Arduino/AudioGame/Mission Falied.wav",
+								"filekind" : "audiofile",
+								"selection" : [ 0.0, 1.0 ],
+								"loop" : 0,
+								"content_state" : 								{
+									"timestretch" : [ 0 ],
+									"originaltempo" : [ 120.0 ],
+									"play" : [ 0 ],
+									"slurtime" : [ 0.0 ],
+									"mode" : [ "basic" ],
+									"formantcorrection" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"basictuning" : [ 440 ],
+									"speed" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"originallength" : [ 0.0, "ticks" ],
+									"pitchshift" : [ 1.0 ],
+									"followglobaltempo" : [ 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"id" : "obj-39",
+					"maxclass" : "playlist~",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+					"patching_rect" : [ 1241.441162, 767.0, 150.0, 30.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"data" : 					{
+						"clips" : [ 							{
+								"filename" : "C:/Users/Paul Suvansupa/Documents/Arduino/AudioGame/Mission Completed.wav",
+								"filekind" : "audiofile",
+								"selection" : [ 0.0, 1.0 ],
+								"loop" : 0,
+								"content_state" : 								{
+									"timestretch" : [ 0 ],
+									"originaltempo" : [ 120.0 ],
+									"play" : [ 0 ],
+									"slurtime" : [ 0.0 ],
+									"mode" : [ "basic" ],
+									"formantcorrection" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"basictuning" : [ 440 ],
+									"speed" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"originallength" : [ 0.0, "ticks" ],
+									"pitchshift" : [ 1.0 ],
+									"followglobaltempo" : [ 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"id" : "obj-36",
+					"maxclass" : "playlist~",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+					"patching_rect" : [ 1050.0, 767.0, 150.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -175,21 +255,21 @@
 								"selection" : [ 0.0, 1.0 ],
 								"loop" : 1,
 								"content_state" : 								{
-									"slurtime" : [ 0.0 ],
-									"formant" : [ 1.0 ],
+									"timestretch" : [ 0 ],
 									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"followglobaltempo" : [ 0 ],
+									"play" : [ 1 ],
+									"slurtime" : [ 0.0 ],
 									"mode" : [ "basic" ],
 									"formantcorrection" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"speed" : [ 1.0 ],
-									"play" : [ 1 ],
-									"pitchcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
-									"timestretch" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
-									"pitchshift" : [ 1.0 ]
+									"basictuning" : [ 440 ],
+									"speed" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"originallength" : [ 0.0, "ticks" ],
+									"pitchshift" : [ 1.0 ],
+									"followglobaltempo" : [ 0 ]
 								}
 
 							}
@@ -215,21 +295,21 @@
 								"selection" : [ 0.0, 1.0 ],
 								"loop" : 1,
 								"content_state" : 								{
-									"slurtime" : [ 0.0 ],
-									"formant" : [ 1.0 ],
+									"timestretch" : [ 0 ],
 									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"followglobaltempo" : [ 0 ],
+									"play" : [ 0 ],
+									"slurtime" : [ 0.0 ],
 									"mode" : [ "basic" ],
 									"formantcorrection" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"speed" : [ 1.0 ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
-									"timestretch" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
-									"pitchshift" : [ 1.0 ]
+									"basictuning" : [ 440 ],
+									"speed" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"originallength" : [ 0.0, "ticks" ],
+									"pitchshift" : [ 1.0 ],
+									"followglobaltempo" : [ 0 ]
 								}
 
 							}
@@ -804,13 +884,14 @@
 					"fontname" : "Lato",
 					"fontsize" : 11.595187,
 					"id" : "obj-18",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 636.941162, 905.666687, 121.0, 22.0 ],
+					"patching_rect" : [ 636.941162, 905.666687, 121.0, 36.0 ],
 					"style" : "",
-					"text" : "0. 0. 50"
+					"text" : "0.170536 0.223479 50"
 				}
 
 			}
@@ -821,7 +902,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 655.0, 978.0, 16.0, 59.0 ],
+					"patching_rect" : [ 636.941162, 978.0, 16.0, 59.0 ],
 					"style" : ""
 				}
 
@@ -833,7 +914,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 614.0, 978.0, 16.0, 59.0 ],
+					"patching_rect" : [ 607.524475, 978.0, 16.0, 59.0 ],
 					"style" : ""
 				}
 
@@ -918,7 +999,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 640.0, 261.640228, 169.0, 30.0 ],
+					"patching_rect" : [ 266.941162, 1027.0, 169.0, 30.0 ],
 					"style" : "",
 					"text" : "Quad Spatialiser"
 				}
@@ -1007,7 +1088,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-19", 0 ],
+					"destination" : [ "obj-50", 0 ],
 					"source" : [ "obj-114", 0 ]
 				}
 
@@ -1029,6 +1110,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-105", 0 ],
+					"order" : 2,
 					"source" : [ "obj-12", 4 ]
 				}
 
@@ -1036,6 +1118,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-105", 0 ],
+					"order" : 1,
 					"source" : [ "obj-12", 3 ]
 				}
 
@@ -1051,6 +1134,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-116", 0 ],
+					"order" : 1,
+					"source" : [ "obj-12", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-116", 0 ],
 					"order" : 0,
 					"source" : [ "obj-12", 1 ]
 				}
@@ -1058,7 +1149,23 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-19", 0 ],
+					"destination" : [ "obj-36", 0 ],
+					"order" : 0,
+					"source" : [ "obj-12", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
+					"order" : 0,
+					"source" : [ "obj-12", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-50", 0 ],
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -1103,20 +1210,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-32", 1 ],
 					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-31", 1 ],
-					"source" : [ "obj-19", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
-					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -1249,8 +1342,36 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-31", 1 ],
+					"source" : [ "obj-36", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
 					"source" : [ "obj-38", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 1 ],
+					"source" : [ "obj-39", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-39", 0 ]
 				}
 
 			}
@@ -1330,6 +1451,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-78", 0 ],
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 1 ],
+					"source" : [ "obj-50", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-50", 0 ]
 				}
 
 			}
@@ -1492,6 +1627,20 @@
 				"bootpath" : "~/Documents/Arduino/AudioGame",
 				"patcherrelativepath" : ".",
 				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Mission Completed.wav",
+				"bootpath" : "~/Documents/Arduino/AudioGame",
+				"patcherrelativepath" : ".",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Mission Falied.wav",
+				"bootpath" : "~/Documents/Arduino/AudioGame",
+				"patcherrelativepath" : ".",
+				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{

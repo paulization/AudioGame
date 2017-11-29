@@ -107,7 +107,7 @@ void moving() {
   
     triangulate();
       
-    locationDebug(); 
+    //locationDebug(); 
 
     handleMove();
 
@@ -156,7 +156,7 @@ void locationDebug() {
 
 //Win or lose depending on distance to target when activate
 void handleActivate() {
-    if (abs(xDistance) <= 2 && abs(yDistance) <= 2) {
+    if (abs(xDistance) <= 3 && abs(yDistance) <= 3) {
         state = SUCCESS;
     } else {
         state = FAIL;
@@ -180,12 +180,14 @@ void playSonar() {
 void win() {
     Serial.println("win 1");
     tone(speaker, 450, 250);
-    tPosX = 3;
-    tPosY = -5;
+    randomSeed(millis());
+    tPosX = random(-5, 5);
+    tPosY = random(-5, 5);
     pulse = 3;
     score++;
+    alreadyMove = false;
     state = MOVE;
-    delay(251);
+    delay(3000);
 }
 
 
@@ -195,9 +197,10 @@ void win() {
 void lose() {
     Serial.println("lose 1");
     tone(speaker, 50, 500);
+    randomSeed(millis());
     alreadyStart = false;
     state = START;
-    delay(501);
+    delay(5000);
 }
   
 // ------------ AUX ------------
