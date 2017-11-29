@@ -40,26 +40,66 @@
 				"box" : 				{
 					"data" : 					{
 						"clips" : [ 							{
-								"filename" : "C:/Users/Paul Suvansupa/Documents/Arduino/AudioGame/instructions.wav",
+								"filename" : "anton.aif",
 								"filekind" : "audiofile",
 								"selection" : [ 0.0, 1.0 ],
 								"loop" : 0,
 								"content_state" : 								{
 									"timestretch" : [ 0 ],
-									"originaltempo" : [ 120.0 ],
-									"play" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"mode" : [ "basic" ],
-									"formantcorrection" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
-									"speed" : [ 1.0 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"quality" : [ "basic" ],
-									"originallength" : [ 0.0, "ticks" ],
 									"pitchshift" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ]
+									"quality" : [ "basic" ],
+									"speed" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
+									"formant" : [ 1.0 ],
+									"originaltempo" : [ 120.0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"followglobaltempo" : [ 0 ],
+									"formantcorrection" : [ 0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"play" : [ 0 ],
+									"pitchcorrection" : [ 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"id" : "obj-19",
+					"maxclass" : "playlist~",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+					"patching_rect" : [ 924.0, 262.0, 150.0, 30.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"data" : 					{
+						"clips" : [ 							{
+								"filename" : "instructions.wav",
+								"filekind" : "audiofile",
+								"selection" : [ 0.0, 1.0 ],
+								"loop" : 0,
+								"content_state" : 								{
+									"timestretch" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"pitchshift" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"speed" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
+									"formant" : [ 1.0 ],
+									"originaltempo" : [ 120.0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"followglobaltempo" : [ 0 ],
+									"formantcorrection" : [ 0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"play" : [ 0 ],
+									"pitchcorrection" : [ 0 ]
 								}
 
 							}
@@ -86,20 +126,20 @@
 								"loop" : 0,
 								"content_state" : 								{
 									"timestretch" : [ 0 ],
-									"originaltempo" : [ 120.0 ],
-									"play" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"mode" : [ "basic" ],
-									"formantcorrection" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
-									"speed" : [ 1.0 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"quality" : [ "basic" ],
-									"originallength" : [ 0.0, "ticks" ],
 									"pitchshift" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ]
+									"quality" : [ "basic" ],
+									"speed" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
+									"formant" : [ 1.0 ],
+									"originaltempo" : [ 120.0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"followglobaltempo" : [ 0 ],
+									"formantcorrection" : [ 0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"play" : [ 0 ],
+									"pitchcorrection" : [ 0 ]
 								}
 
 							}
@@ -126,20 +166,20 @@
 								"loop" : 0,
 								"content_state" : 								{
 									"timestretch" : [ 0 ],
-									"originaltempo" : [ 120.0 ],
-									"play" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"mode" : [ "basic" ],
-									"formantcorrection" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
-									"speed" : [ 1.0 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"quality" : [ "basic" ],
-									"originallength" : [ 0.0, "ticks" ],
 									"pitchshift" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ]
+									"quality" : [ "basic" ],
+									"speed" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
+									"formant" : [ 1.0 ],
+									"originaltempo" : [ 120.0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"followglobaltempo" : [ 0 ],
+									"formantcorrection" : [ 0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"play" : [ 0 ],
+									"pitchcorrection" : [ 0 ]
 								}
 
 							}
@@ -250,26 +290,26 @@
 				"box" : 				{
 					"data" : 					{
 						"clips" : [ 							{
-								"filename" : "./197751__wjoojoo__underwater-ambience-lake-lbj-08232013-1.flac",
+								"filename" : "197751__wjoojoo__underwater-ambience-lake-lbj-08232013-1.flac",
 								"filekind" : "audiofile",
 								"selection" : [ 0.0, 1.0 ],
 								"loop" : 1,
 								"content_state" : 								{
 									"timestretch" : [ 0 ],
-									"originaltempo" : [ 120.0 ],
-									"play" : [ 1 ],
-									"slurtime" : [ 0.0 ],
-									"mode" : [ "basic" ],
-									"formantcorrection" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
-									"speed" : [ 1.0 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"quality" : [ "basic" ],
-									"originallength" : [ 0.0, "ticks" ],
 									"pitchshift" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ]
+									"quality" : [ "basic" ],
+									"speed" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
+									"formant" : [ 1.0 ],
+									"originaltempo" : [ 120.0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"followglobaltempo" : [ 0 ],
+									"formantcorrection" : [ 0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"play" : [ 1 ],
+									"pitchcorrection" : [ 0 ]
 								}
 
 							}
@@ -290,26 +330,26 @@
 				"box" : 				{
 					"data" : 					{
 						"clips" : [ 							{
-								"filename" : "./38701__argitoth__archi-sonar-02.wav",
+								"filename" : "38701__argitoth__archi-sonar-02.wav",
 								"filekind" : "audiofile",
 								"selection" : [ 0.0, 1.0 ],
 								"loop" : 1,
 								"content_state" : 								{
 									"timestretch" : [ 0 ],
-									"originaltempo" : [ 120.0 ],
-									"play" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"mode" : [ "basic" ],
-									"formantcorrection" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
-									"basictuning" : [ 440 ],
-									"speed" : [ 1.0 ],
-									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"quality" : [ "basic" ],
-									"originallength" : [ 0.0, "ticks" ],
 									"pitchshift" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ]
+									"quality" : [ "basic" ],
+									"speed" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
+									"formant" : [ 1.0 ],
+									"originaltempo" : [ 120.0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"followglobaltempo" : [ 0 ],
+									"formantcorrection" : [ 0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"play" : [ 0 ],
+									"pitchcorrection" : [ 0 ]
 								}
 
 							}
@@ -1648,6 +1688,12 @@
 				"bootpath" : "~/Documents/Arduino/AudioGame",
 				"patcherrelativepath" : ".",
 				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "anton.aif",
+				"bootpath" : "C74:/media/msp",
+				"type" : "AIFF",
 				"implicit" : 1
 			}
  ],
