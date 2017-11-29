@@ -141,15 +141,17 @@ void triangulate() {
 
 //map xy control to between -5 to 5
 void handleMove() {
-    PosX = map(analogRead(xPin), 0, 1023, -5, 5);
-    PosY = map(analogRead(yPin), 0, 1023, 5, -5);
+    PosX = map(analogRead(xPin), 0, 1023, 5, -6);
+    PosY = map(analogRead(yPin), 0, 1023, 5, -6);
 }
 
 //for debugging only
 void locationDebug() {
-
     Serial.println(String(PosX) + " " + String(PosY) + " " + String(angle) + " " + String(tDistance));
-    delay(500); // pause
+    Serial.print(analogRead(xPin));
+    Serial.print(" ");
+    Serial.println(analogRead(yPin));
+    delay(2000); // pause
 }
 
 //Win or lose depending on distance to target when activate
