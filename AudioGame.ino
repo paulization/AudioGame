@@ -22,8 +22,8 @@ int alreadyStart = false;
 int alreadyMove = false;
 
 //calculated variables
-int tPosX = 5;
-int tPosY = 5;
+int tPosX;
+int tPosY;
 double angle;
 int xDistance;
 int yDistance;
@@ -80,6 +80,8 @@ void starting() {
         //Send serial msg to Max to staart instructions
         if (!alreadyStart) {
             Serial.println("start 1");
+            tPosX = 5;
+            tPosY = 5;
             alreadyStart = true;
         }
 
@@ -148,9 +150,7 @@ void handleMove() {
 //for debugging only
 void locationDebug() {
     Serial.println(String(PosX) + " " + String(PosY) + " " + String(angle) + " " + String(tDistance));
-    Serial.print(analogRead(xPin));
-    Serial.print(" ");
-    Serial.println(analogRead(yPin));
+    Serial.println(String(tPosX) + " " + String(tPosY));
     delay(2000); // pause
 }
 
