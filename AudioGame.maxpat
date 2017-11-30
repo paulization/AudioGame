@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1954.0, 77.0, 1446.0, 929.0 ],
+		"rect" : [ 1962.0, 85.0, 1446.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,32 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "gain~",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 255.941162, 804.0, 22.0, 140.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "gain~",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 128.5, 799.0, 22.0, 140.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-68",
 					"maxclass" : "message",
@@ -71,20 +97,20 @@
 								"selection" : [ 0.0, 1.0 ],
 								"loop" : 0,
 								"content_state" : 								{
-									"originallengthms" : [ 0.0 ],
-									"pitchshift" : [ 1.0 ],
-									"quality" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"formant" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
 									"speed" : [ 1.0 ],
-									"basictuning" : [ 440 ],
-									"mode" : [ "basic" ],
-									"followglobaltempo" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
+									"originaltempo" : [ 120.0 ],
 									"play" : [ 1 ],
+									"slurtime" : [ 0.0 ],
+									"formantcorrection" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"quality" : [ "basic" ],
 									"pitchcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"pitchshift" : [ 1.0 ],
+									"followglobaltempo" : [ 0 ],
 									"timestretch" : [ 0 ]
 								}
 
@@ -111,20 +137,20 @@
 								"selection" : [ 0.0, 1.0 ],
 								"loop" : 0,
 								"content_state" : 								{
-									"originallengthms" : [ 0.0 ],
-									"pitchshift" : [ 1.0 ],
-									"quality" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"formant" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
 									"speed" : [ 1.0 ],
-									"basictuning" : [ 440 ],
-									"mode" : [ "basic" ],
-									"followglobaltempo" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
+									"originaltempo" : [ 120.0 ],
 									"play" : [ 0 ],
+									"slurtime" : [ 0.0 ],
+									"formantcorrection" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"quality" : [ "basic" ],
 									"pitchcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"pitchshift" : [ 1.0 ],
+									"followglobaltempo" : [ 0 ],
 									"timestretch" : [ 0 ]
 								}
 
@@ -151,20 +177,20 @@
 								"selection" : [ 0.0, 1.0 ],
 								"loop" : 0,
 								"content_state" : 								{
-									"originallengthms" : [ 0.0 ],
-									"pitchshift" : [ 1.0 ],
-									"quality" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"formant" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
 									"speed" : [ 1.0 ],
-									"basictuning" : [ 440 ],
-									"mode" : [ "basic" ],
-									"followglobaltempo" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
+									"originaltempo" : [ 120.0 ],
 									"play" : [ 0 ],
+									"slurtime" : [ 0.0 ],
+									"formantcorrection" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"quality" : [ "basic" ],
 									"pitchcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"pitchshift" : [ 1.0 ],
+									"followglobaltempo" : [ 0 ],
 									"timestretch" : [ 0 ]
 								}
 
@@ -227,7 +253,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 789.0, 629.0, 29.5, 22.0 ],
+					"patching_rect" : [ 789.0, 624.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "- 1"
 				}
@@ -268,20 +294,20 @@
 								"selection" : [ 0.0, 1.0 ],
 								"loop" : 1,
 								"content_state" : 								{
-									"originallengthms" : [ 0.0 ],
-									"pitchshift" : [ 1.0 ],
-									"quality" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"formant" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
 									"speed" : [ 1.0 ],
-									"basictuning" : [ 440 ],
-									"mode" : [ "basic" ],
-									"followglobaltempo" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
+									"originaltempo" : [ 120.0 ],
 									"play" : [ 1 ],
+									"slurtime" : [ 0.0 ],
+									"formantcorrection" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"quality" : [ "basic" ],
 									"pitchcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"pitchshift" : [ 1.0 ],
+									"followglobaltempo" : [ 0 ],
 									"timestretch" : [ 0 ]
 								}
 
@@ -305,23 +331,23 @@
 						"clips" : [ 							{
 								"filename" : "38701__argitoth__archi-sonar-02.wav",
 								"filekind" : "audiofile",
-								"selection" : [ 0.0, 1.0 ],
+								"selection" : [ 0.278846, 1.0 ],
 								"loop" : 1,
 								"content_state" : 								{
-									"originallengthms" : [ 0.0 ],
-									"pitchshift" : [ 1.0 ],
-									"quality" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"formant" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
 									"speed" : [ 1.0 ],
-									"basictuning" : [ 440 ],
-									"mode" : [ "basic" ],
-									"followglobaltempo" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
+									"originaltempo" : [ 120.0 ],
 									"play" : [ 0 ],
+									"slurtime" : [ 0.0 ],
+									"formantcorrection" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"quality" : [ "basic" ],
 									"pitchcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"pitchshift" : [ 1.0 ],
+									"followglobaltempo" : [ 0 ],
 									"timestretch" : [ 0 ]
 								}
 
@@ -334,7 +360,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"patching_rect" : [ 789.0, 653.0, 150.0, 30.0 ],
+					"patching_rect" : [ 789.0, 651.0, 150.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -358,7 +384,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1127.5, 660.0, 123.0, 20.0 ],
+					"patching_rect" : [ 1116.5, 660.0, 123.0, 20.0 ],
 					"style" : "",
 					"text" : "Normalized Distance"
 				}
@@ -370,7 +396,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 941.0, 660.0, 62.0, 20.0 ],
+					"patching_rect" : [ 949.0, 660.0, 52.0, 20.0 ],
 					"style" : "",
 					"text" : "Azimuth"
 				}
@@ -634,7 +660,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1004.941162, 779.666687, 96.0, 36.0 ],
 					"style" : "",
-					"text" : "0.896781 0.223479 500"
+					"text" : "0.517469 0.212164 500"
 				}
 
 			}
@@ -921,6 +947,38 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-31", 3 ],
+					"order" : 0,
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 2 ],
+					"order" : 1,
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 1 ],
+					"order" : 2,
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"order" : 3,
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-32", 1 ],
 					"source" : [ "obj-18", 0 ]
 				}
@@ -1013,43 +1071,38 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 1 ],
-					"source" : [ "obj-36", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
+					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-36", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 1 ],
-					"source" : [ "obj-38", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
+					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-38", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-31", 1 ],
-					"source" : [ "obj-39", 1 ]
+					"order" : 0,
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
-					"source" : [ "obj-39", 0 ]
+					"order" : 1,
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -1129,32 +1182,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 3 ],
-					"order" : 0,
-					"source" : [ "obj-89", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-31", 2 ],
-					"order" : 1,
-					"source" : [ "obj-89", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-31", 1 ],
-					"order" : 0,
-					"source" : [ "obj-89", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-89", 0 ]
 				}
 
@@ -1269,8 +1297,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
